@@ -19,7 +19,7 @@ export const generateMetadata = async (props: DynamicLayoutProps) => {
 const Page = async (props: DynamicLayoutProps) => {
   const mobile = await RouteVariants.getIsMobile(props);
 
-  if (!mobile) return redirect('/chat');
+
 
   return <Category />;
 };
